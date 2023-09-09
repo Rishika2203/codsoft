@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body bgcolor="#ae72f4">
+    <br><Br><br><br><br>
+    <table align="center" bgcolor="pink" cellpadding="13px" cellspacing="13px">
+        <tr colspan="2">
+            <h1 align="center"><u>Bill Details</u></h1>
+        </tr>
+        <tr>
+            <th align="left">
+                Item Total
+            </th>
+            <th align="center">120/-</th>
+        </tr>
+        <tr>
+            <th align="left">
+                Add more Items
+            </th>
+            <th align="center"><a href="meals.html">+</a></th>
+        </tr>
+        <tr>
+            <th align="left">
+                Delivery Fee
+            </th>
+            <th align="center">33/-</th>
+        </tr>
+        <tr>
+            <th align="left">
+                GST
+            </th>
+            <th align="center">40/-</th>
+        </tr>
+        <tr>
+            <td align="left">--------------------</td>
+            <td align="center">-------------</td>
+        </tr>
+
+        <tr>
+            <th align="center">To Pay</th>
+            <th align="center">Rs 193/-</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="center"><a href="#payment"><button>Proceed to Pay</button></a></td>
+        </tr>
+
+    </table>
+    <br><Br><br><br><Br><br><br><BR><br><br>
+    <center>
+
+        <section id="payment">
+            <h1 align="center"><u>Payment Form</u></h1>
+            <table bgcolor="pink" cellspacing="5px" align="center">
+                <tr>
+                    <td>
+                        <form>
+                            <br>
+                            Name:<div class="form-group"><input type="text" required></div><br>
+                            Contact:<div class="form-group"><input type="number"></div><br>
+
+                            Address:<div class="form-group"><textarea rows="4" cols="35" required></textarea></div><br>
+                            Mode of Payment:
+                            <div> <input list="pays" name="pay">
+                                <datalist id="pays">
+                                    <option value=" UPI">
+                                    <option value=" Paytm">
+                                    <option value=" Card">
+                                    <option value=" GPay">
+                                    <option value=" Cash on Delivery">
+                                </datalist>
+                            </div>
+
+                            <div><BR>
+
+                                <input type="submit" onclick="myFunction()">
+                                <script>
+                                    function myFunction() {
+                                        alert("Payment Received");
+                                    }
+                                </script>
+                                <input type="reset">
+                            </div>
+                            <br>
+                        </form>
+                    </td>
+            </table>
+    </center>

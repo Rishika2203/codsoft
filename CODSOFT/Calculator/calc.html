@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <title>
+        Calculator
+    </title>
+
+    <style>
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        .td2 {
+            border-radius: 25px;
+            color: white;
+            background-color: grey;
+            width: 100%;
+            font-size: 25px;
+            border-color: white;
+        }
+
+        .td2:hover {
+            background-color: rgb(83, 83, 83);
+        }
+
+        .td3 {
+            border-radius: 25px;
+            color: white;
+            background-color: rgb(248, 190, 29);
+            width: 100%;
+            font-size: 25px;
+            border-color: white;
+        }
+
+        .td3:hover {
+            background-color: #f3970d;
+        }
+
+        .td1 {
+            border-radius: 25px;
+            color: black;
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            font-size: 25px;
+            border-color: white;
+        }
+
+        .td1:hover {
+            background-color: #2f2f30;
+        }
+
+        textarea {
+            font-size: 50px;
+            resize: none;
+            background-color: black;
+            color: white;
+            border: 1px white solid;
+            text-align: right;
+        }
+
+        table {
+            border: 1px white solid;
+            background-color: black;
+            border-spacing: 20px;
+            border-radius: 20px;
+        }
+    </style>
+
+    <script>
+        function data(val) {
+            document.getElementById('display').value += val;
+        }
+
+        function neg(val) {
+            var y = document.getElementById('display').value;
+            if (val == 1) { document.getElementById('display').value = y * (-1); }
+        }
+
+
+        function cancle() {
+            document.getElementById('display').value = "";
+        }
+
+        function clr(val) {
+            document.getElementById('display').value = "";
+        }
+
+        function calculate() {
+            var x = document.getElementById('display').value;
+            document.getElementById('display').value = eval(x);
+        }
+    </script>
+</head>
+<center>
+
+    <body>
+        <br><br><br>
+        <h1>CALCULATOR</h1>
+        <table>
+            <colgroup>
+                <col>
+                <col>
+                <col style="width:55px; ">
+            </colgroup>
+            <tr style="background-color: black;">
+                <td colspan="4" class="td4"><textarea id="display" rows="2" cols="10" placeholder="0"
+                        disabled></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="td2" value="AC" onclick="cancle('AC')"></td>
+                <td><input type="button" class="td2" value="+/-" onclick="neg('1')"></td>
+                <td><input type="button" class="td2" value="x" onclick="data('*')"></td>
+                <td><input type="button" class="td3" value="&#x232B;" onclick="clr('1')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="td1" value="7" onclick="data('7')"></td>
+                <td><input type="button" class="td1" value="8" onclick="data('8')"></td>
+                <td><input type="button" class="td1" value="9" onclick="data('9')"></td>
+                <td><input type="button" class="td3" value="÷" onclick="data('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="td1" value="4" onclick="data('4')"></td>
+                <td><input type="button" class="td1" value="5" onclick="data('5')"></td>
+                <td><input type="button" class="td1" value="6" onclick="data('6')"></td>
+                <td><input type="button" class="td3" value="-" onclick="data('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="td1" value="1" onclick="data('1')"></td>
+                <td><input type="button" class="td1" value="2" onclick="data('2')"></td>
+                <td><input type="button" class="td1" value="3" onclick="data('3')"></td>
+                <td><input type="button" class="td3" value="+" onclick="data('+')"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" class="td1" value="0" onclick="data('0')"></td>
+                <td><input type="button" class="td1" value="." onclick="data('.')"></td>
+                <td><input type="button" class="td3" value="=" onclick="calculate('=')"></td>
+            </tr>
+        </table>
+    </body>
+</center>
+
+</html>

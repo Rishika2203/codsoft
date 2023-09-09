@@ -1,0 +1,361 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+}
+
+body {
+    background-color: black;
+}
+
+#logo {}
+
+
+.searchbar {
+    float: right;
+    padding: 7px 26px;
+    margin: 0px 0px 0px 52px;
+}
+
+#logo img {
+    height: 80px;
+    margin: 15px 35px
+}
+
+#navbar ul {
+    position: sticky;
+    display: flex;
+    margin-left: 242px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 24px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 7px;
+    margin-left: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/*home section*/
+#home {
+    background-color: rgb(236, 151, 39);
+}
+
+.welcome {
+    text-align: center;
+    color: rgb(7, 6, 6);
+    margin-top: 15px;
+    padding: 45px 0px 0px 0px;
+    text-decoration: underline;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+#home table tr th img {
+    height: 280px;
+    width: 285px;
+    border-radius: 22px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#home table tr th img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/*
+#home table tr th{
+    border-color: blue;
+    border: 32px;
+}*/
+#home table tr td {
+    font-weight: bold;
+    font-size: 37px;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 0px;
+}
+
+/*aboitUs section*/
+/*
+#aboutUs{
+    display: flex;
+}*/
+.About {
+    margin-top: 75px;
+    margin-bottom: 65px;
+    padding-bottom: 67px;
+}
+
+#aboutUs table tr td img {
+    height: 500px;
+    width: 84%;
+    margin: 35px 2px 0px 0px;
+    padding-top: 9px;
+    padding-left: 50px;
+    border-radius: 12px;
+}
+
+#aboutUs table tr td h1 {
+    color: #F47E42;
+    padding: 37px 1px 0px 5px;
+    margin-top: 120px;
+    margin-left: 45px;
+    font-size: 82px;
+    font-weight: bold;
+}
+
+#para {
+    color: white;
+    font-size: 22px;
+    text-align: justify;
+    margin-top: 10px;
+    padding: 10px 95px 154px 44px;
+    margin-left: 45px;
+    margin-right: 22px;
+}
+
+
+/*services-section*/
+#services {
+    background-color: white;
+}
+
+#services img {
+    width: 100%;
+    height: 505px;
+    padding-top: 0px;
+    padding-bottom: 120px;
+}
+
+#services h1 {
+    text-align: center;
+    color: #F47E42;
+    margin-top: 10px;
+    padding: 135px 0px 0px 0px;
+    text-decoration: underline;
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*contactUs-section*/
+#contactUs {
+    background-image: url('images/contact.jpeg');
+    width: 1500px;
+    height: 650px;
+    background-size: cover;
+}
+
+#contactUs h1 {
+    padding-top: 65px;
+    padding-right: 255px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 65px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+#contactUs table {
+    padding-top: 2px;
+}
+
+#contactUs form {
+    color: #b83f03;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 25px;
+    padding-right: 25px;
+    padding-left: 0px;
+    margin-left: 2px;
+}
+
+.form-group input {
+    width: 510px;
+    font-size: 30px;
+    border-radius: 8px;
+    background-color: #dfe9f7;
+}
+
+.form-group textarea {
+    background-color: #dfe9f7;
+    border-radius: 8px;
+    width: 510px;
+    height: 104px;
+    border: 2px solid black;
+}
+
+.contact ul li {
+    list-style: none;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 30px;
+    margin-top: 2px;
+    padding-top: 0px;
+}
+
+
+.contact ul li {
+    background-color: #F47E42;
+    padding: 23px 22px;
+    border-radius: 22px;
+    margin-left: 55px;
+    margin-right: 499px;
+}
+
+.contact ul li a {
+
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.contact ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+#c1 {
+    margin-bottom: 39px;
+    margin-top: 15px;
+}
+
+#c2 {
+    margin-top: 39px;
+    margin-bottom: 39px;
+}
+
+#c3 {
+    margin-top: 39px;
+    margin-bottom: 73px;
+}
+
+#submitbtn {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 14px 39px;
+    margin-top: 12px;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 175px;
+}
+
+#submitbtn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/*Restaurants-section*/
+
+#restaurants {
+    background-color: #c5d2e4;
+}
+
+/*
+#restaurants {
+    background-color: #b6efaf;
+}*/
+.newrest {
+    text-align: left;
+    color: rgb(7, 6, 6);
+    margin-top: 10px;
+    padding: 145px 0px 0px 20px;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#restaurants table {
+
+    padding-left: 35px;
+}
+
+#restaurants table tr th img {
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 65px;
+}
+
+#restaurants table tr th img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/*
+#home table tr th{
+    border-color: blue;
+    border: 32px;
+}*/
+.container {
+    font-weight: bold;
+    font-size: 27px;
+    padding-top: 10px;
+    padding-left: 45px;
+    text-align: center;
+}
+
+.description {
+
+    font-size: 17px;
+    padding-top: 7px;
+    padding-left: 55px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    color: #c20e38;
+}
+
+
+#restaurants ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#seeall {
+    margin-left: 650px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    float: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    border-radius: 12px;
+    margin-top: 123px;
+    border: 2px solid black;
+}

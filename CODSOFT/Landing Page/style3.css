@@ -1,0 +1,168 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+}
+
+body {
+    background-color: black;
+}
+
+#logo {}
+
+
+.searchbar {
+    float: right;
+    padding: 7px 26px;
+    margin: 0px 0px 0px 52px;
+}
+
+#logo img {
+    height: 80px;
+    margin: 15px 35px
+}
+
+#navbar ul {
+    position: sticky;
+    display: flex;
+    margin-left: 242px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 24px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 7px;
+    margin-left: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+#main {
+    margin-top: 32px;
+}
+
+#meals {
+    margin-top: 112px;
+    font-size: 43px;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.menu {
+    margin-top: 4px;
+    margin-left: 175px;
+    padding-left: 23px;
+ 
+}
+
+#types {
+    margin-top: 48px;
+    margin-left: 75px;
+    font-family: 'Nunito', sans-serif;
+
+    font-size: 24px;
+}
+
+#dess {}
+
+.biryani {
+    height: 123px;
+    width: 123px;
+    margin-left: 88px;
+}
+
+.cart {
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    float: right;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    border-radius: 12px;
+    margin-top: 8px;
+    border: 2px solid black;
+}
+
+.rows {
+    padding-top: 2px;
+}
+
+table tr td {
+    padding-left: 55px;
+}
+
+table tr td li {
+    list-style: none;
+}
+
+.items {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #c20e38;
+    margin-left: 20px;
+}
+
+.details {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.amount {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 115px;
+
+}
+
+.from {
+    font-size: 23px;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.heading {
+    margin-top: 98px;
+    margin-left: 233px;
+    font-size: 43px;
+    text-align: left;
+    padding-left: 43px;
+
+    text-decoration: underline;
+}
+
+#lhs {
+    position: fixed;
+    padding-right: 63px;
+
+}
